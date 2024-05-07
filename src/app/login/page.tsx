@@ -5,7 +5,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 
-export default function SignupPage() {
+export default function LoginPage() {
   const router = useRouter();
   const [user, setUser] = React.useState({
     email: "",
@@ -68,6 +68,7 @@ export default function SignupPage() {
       >
         Login
       </button>
+      <Link href="/forgotpassword">Forgot Password ?</Link>
       <Link href="/signup"> visit signup page</Link>
     </div>
   );
